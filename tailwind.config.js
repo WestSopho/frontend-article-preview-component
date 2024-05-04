@@ -1,9 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./**/*.{html,js}",
-  "./node_modules/flowbite/**/*.js",
   ],
-  theme: {
+  theme: {  
     extend: {
       fontFamily:{
         "manrope": ["Manrope", "sans-serif"]
