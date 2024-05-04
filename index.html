@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Article preview component</title>
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="font-manrope bg-ECF2F8">
+  <!-- Wrapper -->
+  <div class="min-h-screen flex justify-center items-center p-3">
+    <!-- Article Preview Component -->
+    <div class="max-w-[327px] flex flex-col sm:max-w-[730px] sm:flex-row">
+      <!-- Image Component Wrapper -->
+      <div class="max-h-[200px] sm:max-h-full overflow-clip">
+        <img class="sm:size-full object-cover rounded-t-xl sm:rounded-tr-none sm:rounded-l-xl" src="images/drawers.jpg" alt="drawers image">
+      </div>
+      <!-- Article Info Wrapper -->
+      <div class="bg-white flex flex-col justify-center rounded-b-xl sm:rounded-b-none sm:rounded-r-xl">
+        <!-- Top Wrapper -->
+        <div class="flex flex-col gap-5 pt-8 pb-4 px-8 sm:px-10 sm:pt-9">
+          <h1 class="font-bold tracking-wide text-48556A sm:text-xl">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+          <p class="font-medium tracking-wide text-6E8098 sm:text-sm">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
+        </div>
+        <!-- Bottom Wrapper -->
+        <div class="flex justify-between px-8 h-[90px] sm:px-10 rounded-b-xl" id="bottom-wrapper">
+          <!-- Author Information -->
+          <div class="flex items-center gap-3" id="author">
+            <!-- Author Image Profile -->
+            <img class="rounded-full size-[40px]" src="images/avatar-michelle.jpg" alt="avatar michelle">
+            <!-- Author Name and Date -->
+            <div>
+              <p class="font-bold text-48556A">Michelle Appleton</p>
+              <p class="font-medium text-9DAEC2">28 Jun 2020</p>
+            </div>
+          </div>
+          <!-- Social Media Popover -->
+          <div data-popover id="popover-social-media" role="tooltip" class="absolute z-20 invisible inline-block w-64 text-sm py-4 transition-opacity duration-100 bg-48556A rounded-lg opacity-0">
+            <!-- Social Media Popover Div -->
+            <div class="flex justify-center gap-4">
+              <p class="font-medium text-9DAEC2 tracking-[0.4rem]">SHARE</p>
+              <!-- Social Media Icons -->
+              <div class="flex gap-3">
+                <img class="hover:cursor-pointer" src="images/icon-facebook.svg" alt="icon facebook">
+                <img class="hover:cursor-pointer" src="images/icon-twitter.svg" alt="icon twitter">
+                <img class="hover:cursor-pointer" src="images/icon-pinterest.svg" alt="icon pinterest">
+              </div>
+            </div>
+            <div data-popper-arrow></div>
+          </div>
+
+          <!-- Social Media Div -->
+          <div class="hidden gap-5 items-center flex-wrap" id="social-media">
+            <p class="font-medium text-9DAEC2 tracking-[0.4rem]">SHARE</p>
+            <!-- Social Media Icons -->
+            <div class="flex gap-3">
+              <img class="hover:cursor-pointer" src="images/icon-facebook.svg" alt="icon facebook">
+              <img class="hover:cursor-pointer" src="images/icon-twitter.svg" alt="icon twitter">
+              <img class="hover:cursor-pointer" src="images/icon-pinterest.svg" alt="icon pinterest">
+            </div>
+          </div>
+          <!-- Share Button -->
+          <div class="flex flex-col justify-center">
+            <!-- SVG Wrapper -->
+            <div data-popover-target="popover-social-media" class="size-fit bg-ECF2F8 p-2 rounded-full fill-6E8098 hover:cursor-pointer" id="share-button-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+  <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+</html>
